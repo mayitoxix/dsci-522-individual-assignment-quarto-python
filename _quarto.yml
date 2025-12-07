@@ -1,5 +1,19 @@
 project:
-  type: default
+  type: website
   output-dir: docs
-  render:
-    - reports/qmd_example.qmd
+
+website:
+  title: "DSCI 310: Historical Horse Population in Canada"
+
+format:
+  html:
+    toc: true
+    toc-depth: 2
+  pdf:
+    toc: true
+    toc-depth: 2
+
+execute:
+  echo: false
+
+bibliography: references.bib
